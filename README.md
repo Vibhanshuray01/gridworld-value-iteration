@@ -35,15 +35,14 @@ The reward is **-1 for each move** until the agent reaches `(3,3)`, which has a 
 
 The **Bellman Equation** updates the value of each state as:
 
-\[
-V(s) = \max_a \sum_{s'} P(s'|s, a) \left[ R + \gamma V(s') \right]
-\]
+V(s) = max_a ∑ P(s'|s, a) [ R + γ * V(s') ]
 
-Where:  
-- \( V(s) \) = Value of state **s**  
-- \( R \) = Reward for each move **(-1)**  
-- \( \gamma \) = **Discount factor (1.0, no discounting)**  
-- \( P(s'|s, a) \) = **Transition probability (1/4 for each valid move)**  
+
+Where:
+V(s) = Value of state s
+R = Reward for each move (-1)
+γ = Discount factor (1.0, no discounting)
+P(s'|s, a) = Transition probability (1/4 for each valid move)
 
 ---
 
