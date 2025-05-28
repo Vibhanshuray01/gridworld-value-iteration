@@ -39,9 +39,9 @@ V(s) = max_a ∑ P(s'|s, a) [ R + γ * V(s') ]
 
 
 Where:
-V(s) = Value of state s
-R = Reward for each move (-1)
-γ = Discount factor (1.0, no discounting)
+V(s) = Value of state s, 
+R = Reward for each move (-1), 
+γ = Discount factor (1.0, no discounting), 
 P(s'|s, a) = Transition probability (1/4 for each valid move)
 
 ---
